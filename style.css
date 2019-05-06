@@ -300,7 +300,7 @@ footer .copyright {
     }
     .nav a {
         display: block;
-        padding: 10px;
+        padding: 10px 0;
     }
     .nav {
         padding-left: 10px !important;
