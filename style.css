@@ -97,6 +97,7 @@
 }
 .whoamitext {
     text-align: center;
+    padding-top: 20px;
 }
 .whoamitext a {
     color: #007BFF;
