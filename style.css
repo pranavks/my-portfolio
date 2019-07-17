@@ -201,9 +201,13 @@
 }
 #blog {
     text-align: center;
-    padding: 97px;
+    padding: 97px 0 97px 0;
     line-height: 50px;
     background-color: #E9ECEF;
+}
+#blog button {
+    font-size: 25px;
+    padding: 3px 20px 3px 20px;
 }
 #blog button:focus, #blog button:active {
     outline: none !important;
