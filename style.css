@@ -213,6 +213,15 @@
     outline: none !important;
     box-shadow: none;
 }
+#blog button .fas {
+    display: none;
+}
+#blog button:hover .fas {
+    display: inline-block;
+}
+#blog button:hover .fa, #blog button:active .fa {
+    display: none;
+}
 
 .page4 {
     background-color: #252934;
