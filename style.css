@@ -137,7 +137,7 @@
 
 .page3 .projectwrapper {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, 390px);
     grid-gap: 20px;
     justify-content: center;
 }
@@ -318,9 +318,7 @@ footer .copyright {
     .skills {
         padding: 50px 200px 0 200px;
     }
-    .page3 .projectwrapper {
-        grid-template-columns: auto auto;
-    }
+
     .page3 .projects {
         height: auto;
         width: auto;
