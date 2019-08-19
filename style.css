@@ -318,6 +318,10 @@ footer .copyright {
     .skills {
         padding: 50px 200px 0 200px;
     }
+    .page3 .projectwrapper {
+        display: flex;
+        
+    }
     .page3 .projects {
         height: auto;
         width: auto;
