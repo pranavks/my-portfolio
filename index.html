@@ -3,308 +3,439 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pranav K S</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="description" content="Pranav K S — Lead Frontend Developer with 7 years of experience building and scaling high-traffic web products." />
+    <title>Pranav K S - Lead Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page1" id="page1">
-      <div>
-        Hello, I'm <span>Pranav.</span><br />
-        I'm a front-end web developer.<br />
-        <a href="#page2"
-          ><button>
-            View my work &nbsp;<i class="material-icons">arrow_downward</i>
-          </button></a
-        >
-      </div>
-    </div>
 
-    <div class="nav">
-      <a href="#page1">HOME</a>
-      <a href="#page2">ABOUT</a>
-      <a href="#page3">PORTFOLIO</a>
-      <a href="#page4">CONTACT</a>
-    </div>
-
-    <div class="page2 clearfix" id="page2">
-      <h1>ABOUT</h1>
-      <div class="aboutwrapper">
-        <div class="whoami">
-          <div id="pranavpic">
-            <img src="images/Pranav%20Casual%20Compressed.png" class="rounded-circle"/>
-          </div>
-          <div class="whoamitext">
-            <h2>Who is Pranav?</h2>
-            <p>
-              I'm a Frontend Developer<br />
-              working at
-              <a href="https://surveysparrow.com/" target="_blank"
-                >SurveySparrow</a
-              >.<br />
-              I can design & develop stunning
-              <a href="#page3">websites</a>!<br />
-            </p>
-          </div>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="#hero">Pranav K S</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </label>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <a href="Pranav_Resume.docx" class="nav-resume" download>Resume ↓</a>
         </div>
-        <div class="skills">
-          <div class="skillswrapper">
-            <div class="progress" style="height: 25px">
-              <div class="progress-bar" style="width:95%"></div>
-              <span>HTML</span>
-            </div>
-            <br />
-            <div class="progress" style="height: 25px">
-              <div class="progress-bar" style="width:95%"></div>
-              <span>CSS</span>
-            </div>
-            <br />
-            <div class="progress" style="height: 25px">
-              <div class="progress-bar" style="width:95%"></div>
-              <span>Sass</span>
-            </div>
-            <br />
-            <div class="progress" style="height: 25px">
-              <div class="progress-bar" style="width:95%"></div>
-              <span>Bootstrap</span>
-            </div>
-            <br />
-            <div class="progress" style="height: 25px">
-              <div
-                class="progress-bar"
-                style="width:90%"
-              ></div>
-              <span>JavaScript</span>
-            </div>
-            <br />
-            <div class="progress" style="height: 25px">
-              <div
-                class="progress-bar"
-                style="width:80%"
-              ></div>
-              <span>React</span>
-            </div>
-            <br />
-            <div class="progress" style="height: 25px">
-              <div class="progress-bar" style="width:70%"></div>
-              <span>PhotoShop</span>
-            </div>
-            <br />
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Pranav K S</h1>
+        <h2 class="hero-title">Lead Frontend Developer</h2>
+        <p class="hero-tagline">
+          I build fast, scalable web experiences — from architecture to delivery.<br />
+          7 years of shipping at scale.
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <a href="Pranav_Resume.docx" class="hero-resume-link" download>Download Resume ↓</a>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">01</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <img src="images/pranav.png" alt="Pranav K S" class="about-photo" />
+          </div>
+          <div class="about-text">
+            <p>I'm a Lead Frontend Developer with 7 years of experience building and scaling high-traffic web products. Most recently I led the frontend web team at SurveySparrow, where I owned everything from architecture and performance engineering to team leadership and hiring.</p>
+            <p>I've shipped full website migrations, driven Core Web Vitals from poor to 90–100 scores on a 1M+ monthly visitor site, built internal tooling, component libraries, and product websites from the ground up. I care deeply about performance, developer experience, and writing code that scales — both technically and as a team.</p>
+            <p>I've also conducted 200+ interviews and hired 10+ engineers. I've been writing code since well before the AI era — and now I use it to maximise what I can deliver.</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="page3" id="page3">
-      <h1>PROJECTS</h1>
-      <div class="projectwrapper">
-         <div class="projects">
-          <img src="images/videogallery-vanillajs.png" />
-          <div class="overlay">
-            <div class="text">
-              Video Gallery using VanillaJS
+    <!-- Skills -->
+    <section class="skills-section section alt-bg" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">02</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Languages &amp; Markup</h3>
+            <div class="skill-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
             </div>
-            <a href="https://github.com/pranavks/videogallery-vanillajs" target="_blank"
-              ><button class="viewprojectbutton">View Project</button></a
-            >
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/form-validator-vanillajs.png" />
-          <div class="overlay">
-            <div class="text">
-              Form Validator using VanillaJS
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frameworks &amp; Libraries</h3>
+            <div class="skill-tags">
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Expo</span>
             </div>
-            <a href="https://github.com/pranavks/form-validator-vanillajs" target="_blank"
-              ><button class="viewprojectbutton">View Project</button></a
-            >
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/3gmelife.png" />
-          <div class="overlay">
-            <div class="text">
-              World Book of Records Event Website
+          <div class="skill-group">
+            <h3 class="skill-group-title">React &amp; Next.js Features</h3>
+            <div class="skill-tags">
+              <span class="tag">Server Components</span>
+              <span class="tag">Server Actions</span>
+              <span class="tag">App Router</span>
+              <span class="tag">Streaming</span>
+              <span class="tag">Suspense</span>
+              <span class="tag">Middleware</span>
+              <span class="tag">Metadata API</span>
+              <span class="tag">next/image</span>
+              <span class="tag">Error Boundaries</span>
+              <span class="tag">Custom Hooks</span>
+              <span class="tag">React 19</span>
             </div>
-            <a href="https://link.pranavks.com/3gmelife" target="_blank"
-              ><button class="viewprojectbutton">View Website</button></a
-            >
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/3glife.png" />
-          <div class="overlay">
-            <div class="text">
-              Business Website
+          <div class="skill-group">
+            <h3 class="skill-group-title">Styling</h3>
+            <div class="skill-tags">
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">SCSS / Sass</span>
+              <span class="tag">Radix UI</span>
+              <span class="tag">Shadcn/ui</span>
+              <span class="tag">Chakra UI</span>
+              <span class="tag">Bootstrap</span>
             </div>
-            <a href="http://www.3glife.org/" target="_blank"
-              ><button class="viewprojectbutton">View Website</button></a
-            >
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/missionganit.png" />
-          <div class="overlay">
-            <div class="text">
-              IIT Madras Research Park Event Website
+          <div class="skill-group">
+            <h3 class="skill-group-title">State Management</h3>
+            <div class="skill-tags">
+              <span class="tag">Zustand</span>
+              <span class="tag">Redux Toolkit</span>
+              <span class="tag">Context API</span>
             </div>
-            <a href="https://link.pranavks.com/mission-ganit" target="_blank"
-              ><button class="viewprojectbutton">View Website</button></a
-            >
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/website-template-1.png" />
-          <div class="overlay">
-            <div class="text">
-              Website Template using HTML, CSS, Sass, Bootstrap, JavaScript &
-              jQuery
+          <div class="skill-group">
+            <h3 class="skill-group-title">Data Fetching</h3>
+            <div class="skill-tags">
+              <span class="tag">TanStack Query</span>
+              <span class="tag">REST APIs</span>
             </div>
-            <a href="https://github.com/pranavks/website-template-1" target="_blank"
-              ><button class="viewprojectbutton">View Project</button></a
-            >
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/application-form.png" />
-          <div class="overlay">
-            <div class="text">
-              Application Form using HTML, CSS, Sass, Bootstrap, JavaScript &
-              jQuery
+          <div class="skill-group">
+            <h3 class="skill-group-title">CMS &amp; Backend</h3>
+            <div class="skill-tags">
+              <span class="tag">Strapi</span>
+              <span class="tag">Payload CMS</span>
+              <span class="tag">WordPress</span>
             </div>
-            <a href="https://github.com/pranavks/application-form" target="_blank"
-              ><button class="viewprojectbutton">View Project</button></a
-            >
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/student-portal.png" />
-          <div class="overlay">
-            <div class="text">Student Portal using HTML, CSS & JavaScript</div>
-            <a href="https://github.com/pranavks/student-portal" target="_blank"
-              ><button class="viewprojectbutton">View Project</button></a
-            >
-          </div>
-        </div>
-        <div class="projects">
-          <img src="images/my-portfolio.png" />
-          <div class="overlay">
-            <div class="text">
-              Portfolio Website using HTML, CSS & Bootstrap
+          <div class="skill-group">
+            <h3 class="skill-group-title">Testing</h3>
+            <div class="skill-tags">
+              <span class="tag">Jest</span>
+              <span class="tag">Vitest</span>
+              <span class="tag">Playwright</span>
             </div>
-            <a href="https://github.com/pranavks/my-portfolio" target="_blank"
-              ><button class="viewprojectbutton">View Project</button></a
-            >
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/blog-template.png" />
-          <div class="overlay">
-            <div class="text">Blog Template using HTML, CSS & Bootstrap</div>
-            <a href="https://github.com/pranavks/blog-template" target="_blank"
-              ><button class="viewprojectbutton">View Project</button></a
-            >
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tooling &amp; Build</h3>
+            <div class="skill-tags">
+              <span class="tag">Webpack</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Turbopack</span>
+              <span class="tag">ESLint</span>
+              <span class="tag">Biome</span>
+              <span class="tag">Storybook</span>
+              <span class="tag">Lerna (Monorepo)</span>
+            </div>
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/iimts.png" />
-          <div class="overlay">
-            <div class="text">Educational Institution Website using HTML & CSS</div>
-            <a href="https://link.pranavks.com/edu-website" target="_blank"
-              ><button class="viewprojectbutton">View Website</button></a
-            >
+          <div class="skill-group">
+            <h3 class="skill-group-title">Performance &amp; SEO</h3>
+            <div class="skill-tags">
+              <span class="tag">Core Web Vitals</span>
+              <span class="tag">Lighthouse</span>
+              <span class="tag">Internationalisation (i18n)</span>
+            </div>
           </div>
-        </div>
-        <div class="projects">
-          <img src="images/fb-login-ui-clone.png" />
-          <div class="overlay">
-            <div class="text">FB UI clone for PC & Mobile using HTML & CSS</div>
-            <a href="https://github.com/pranavks/fb-ui-clone" target="_blank"
-              ><button class="viewprojectbutton">View Project</button></a
-            >
+          <div class="skill-group">
+            <h3 class="skill-group-title">AI Tooling</h3>
+            <div class="skill-tags">
+              <span class="tag">Cursor</span>
+              <span class="tag">Claude Code</span>
+              <span class="tag">Codex</span>
+              <span class="tag">Copilot</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">AI Practices</h3>
+            <div class="skill-tags">
+              <span class="tag">MCP integrations</span>
+              <span class="tag">Subagents</span>
+              <span class="tag">Agent skills</span>
+              <span class="tag">Rules</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-<!--     <div id="blog">
-      <h1>BLOG</h1>
-      See what I'm doing right now!<br />
-      <a href="https://kspranav.wordpress.com/" target="_blank"
-        ><button type="button" class="btn btn-primary">
-          <i class="fa fa-hand-o-right" aria-hidden="true"></i></button
-      ></a>
-    </div> -->
+    <!-- Experience -->
+    <section class="experience-section section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">03</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        <div class="timeline">
 
-    <div class="page4" id="page4">
-      <h1>CONTACT</h1>
-      <p>Have a question or want to work together?</p>
-      <form
-        class="clearfix"
-        method="POST"
-        action="https://formspree.io/kspranav10@gmail.com"
-      >
-        <input type="text" name="name" placeholder="Name" required /><br />
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-        /><br />
-        <textarea name="message" placeholder="Your Message" required></textarea
-        ><br />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="timeline-period">Jun 2022 – Apr 2026</span>
+              <span class="timeline-company">SurveySparrow</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Lead Frontend Developer</h3>
+              <ul class="timeline-bullets">
+                <li>Led, managed, and mentored a 4-person frontend web team; owned sprint planning, technical architecture, code reviews, and performance reviews.</li>
+                <li>Architected and delivered a full migration of 3,000+ pages of surveysparrow.com from WordPress to React, Next.js, and Strapi CMS - leveraging Server Components, Streaming, and the App Router - including the project foundation.</li>
+                <li>Drove Technical SEO and Core Web Vitals optimisation across all tracked URLs - took every page from poor/needs improvement to good on a 1M+ monthly visitor website, with Lighthouse performance scores rising from 20-30 to 90-100.</li>
+                <li>Independently shipped 3 new product websites from scratch using React, Next.js, and Payload CMS - sparrowcrm.com, sparrowgenie.com, and peopleinsales.com.</li>
+                <li>Built internal tooling including component libraries, a website starter kit, and 3 Payload CMS plugins used org-wide by content teams.</li>
+                <li>Leveraged AI-assisted development tooling to increase delivery velocity across the team.</li>
+                <li>Implemented Internationalisation (i18n), enabling SurveySparrow's website to serve a global multilingual audience.</li>
+                <li>Owned release management, environment configuration, and CMS content modelling; set up A/B testing architecture and maintained technical documentation for team onboarding and knowledge sharing.</li>
+                <li>Participated in company-wide hiring: conducted 200+ interviews and hired 10+ frontend engineers across multiple teams.</li>
+                <li>Implemented app-level and CDN-level caching with cache revalidation strategies.</li>
+                <li>Handled security, compliance, and observability: implemented cookie consent manager for GDPR, enforced CSP headers, resolved security findings from VAPT audits and integrated SonarQube workflow; set up analytics and monitoring tooling.</li>
+                <li>Established team-wide coding standards, linting rules, style guides, and Git workflows; implemented pipelines for automated linting, testing, and security scans.</li>
+                <li>Built and maintained internal APIs and Server Actions to support website functionality.</li>
+                <li>Collaborated with marketing, design, sales, backend, DevOps, security, and legal teams to deliver high-quality, compliant web experiences.</li>
+                <li>Defined mobile app architecture for SparrowCRM product using React Native and Expo, laying the technical foundation ahead of its launch.</li>
+              </ul>
+            </div>
+          </div>
 
-    <footer>
-      <div class="socialicons">
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/pranavks/" target="_blank"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/pranavks" target="_blank"
-              ><i class="fa fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/kspranav10" target="_blank"
-              ><i class="fa fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/pranav_k_s/" target="_blank"
-              ><i class="fa fa-instagram"></i
-            ></a>
-          </li>
-        </ul>
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="timeline-period">Dec 2021 – Jun 2022</span>
+              <span class="timeline-company">SurveySparrow</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Senior Frontend Developer</h3>
+              <ul class="timeline-bullets">
+                <li>Owned SurveySparrow's marketing website end-to-end, leading delivery and continuous improvement across design, performance, and SEO.</li>
+                <li>Mentored junior frontend developers through regular code reviews and pair programming.</li>
+                <li>Delivered pixel-perfect, performant, and accessible pages including animated and interactive UIs; stack: Vanilla JavaScript, SCSS, and Bootstrap.</li>
+                <li>Built robust UI with proper error handling, loading states, and fallback experiences throughout the website.</li>
+                <li>Integrated third-party tools including chat widgets and marketing platforms.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="timeline-period">Aug 2020 – Dec 2021</span>
+              <span class="timeline-company">SurveySparrow</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Frontend Developer</h3>
+              <ul class="timeline-bullets">
+                <li>Built pixel-perfect, performant, responsive, and cross-browser compatible pages and reusable UI components with strong focus on performance and accessibility.</li>
+                <li>Developed HTML email templates with robust email client compatibility, including Outlook support.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="timeline-period">Aug 2019 – Aug 2020</span>
+              <span class="timeline-company">Genius Group Global</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">UI Developer</h3>
+              <ul class="timeline-bullets">
+                <li>Developed dynamic web interfaces; optimised page load performance.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <br />
-      <div class="copyright">
-        PRANAV K S ©2020
+    </section>
+
+    <!-- Archive / Early Work -->
+    <section class="archive-section section" id="archive">
+      <div class="container">
+        <details class="archive-details">
+          <summary class="archive-summary">
+            <div class="archive-summary-inner">
+              <span class="archive-title">Early Work</span>
+              <span class="archive-subtitle">2019 – 2020 &middot; Personal &amp; freelance projects from when it all started</span>
+            </div>
+            <span class="archive-chevron" aria-hidden="true">▼</span>
+          </summary>
+          <p class="archive-note">These are projects from the beginning of my career. Building for fun was how I got here.</p>
+          <div class="archive-grid">
+            <div class="archive-card">
+              <img src="images/videogallery-vanillajs.png" alt="Video Gallery" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Video Gallery</p>
+                <p class="archive-card-tech">Vanilla JS</p>
+                <a href="https://github.com/pranavks/videogallery-vanillajs" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Project</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/form-validator-vanillajs.png" alt="Form Validator" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Form Validator</p>
+                <p class="archive-card-tech">Vanilla JS</p>
+                <a href="https://github.com/pranavks/form-validator-vanillajs" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Project</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/3gmelife.png" alt="World Book of Records Event Website" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">World Book of Records Event</p>
+                <p class="archive-card-tech">HTML &middot; CSS</p>
+                <a href="https://link.pranavks.com/3gmelife" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Website</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/3glife.png" alt="Business Website" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Business Website</p>
+                <p class="archive-card-tech">HTML &middot; CSS</p>
+                <a href="http://www.3glife.org/" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Website</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/missionganit.png" alt="IIT Madras Research Park Event" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">IIT Madras Research Park Event</p>
+                <p class="archive-card-tech">HTML &middot; CSS</p>
+                <a href="https://link.pranavks.com/mission-ganit" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Website</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/website-template-1.png" alt="Website Template" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Website Template</p>
+                <p class="archive-card-tech">HTML &middot; CSS &middot; Sass &middot; Bootstrap &middot; JS</p>
+                <a href="https://github.com/pranavks/website-template-1" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Project</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/application-form.png" alt="Application Form" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Application Form</p>
+                <p class="archive-card-tech">HTML &middot; CSS &middot; Sass &middot; Bootstrap &middot; JS</p>
+                <a href="https://github.com/pranavks/application-form" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Project</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/student-portal.png" alt="Student Portal" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Student Portal</p>
+                <p class="archive-card-tech">HTML &middot; CSS &middot; JS</p>
+                <a href="https://github.com/pranavks/student-portal" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Project</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/my-portfolio.png" alt="Portfolio Website" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Portfolio Website</p>
+                <p class="archive-card-tech">HTML &middot; CSS &middot; Bootstrap</p>
+                <a href="https://github.com/pranavks/my-portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Project</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/blog-template.png" alt="Blog Template" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Blog Template</p>
+                <p class="archive-card-tech">HTML &middot; CSS &middot; Bootstrap</p>
+                <a href="https://github.com/pranavks/blog-template" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Project</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/iimts.png" alt="Educational Institution Website" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Educational Institution Website</p>
+                <p class="archive-card-tech">HTML &middot; CSS</p>
+                <a href="https://link.pranavks.com/edu-website" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Website</a>
+              </div>
+            </div>
+            <div class="archive-card">
+              <img src="images/fb-login-ui-clone.png" alt="Facebook UI Clone" />
+              <div class="archive-overlay">
+                <p class="archive-card-title">Facebook UI Clone</p>
+                <p class="archive-card-tech">HTML &middot; CSS</p>
+                <a href="https://github.com/pranavks/fb-ui-clone" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">View Project</a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section section alt-bg" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">05</span>
+          <h2 class="section-title">Let's Work Together</h2>
+        </div>
+        <p class="contact-intro">Have a project in mind or want to talk? I'm open to freelance, consulting, or full-time opportunities.</p>
+        <div class="contact-grid">
+          <form class="contact-form" method="POST" action="https://formspree.io/kspranav10@gmail.com">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <div class="contact-links">
+<a href="https://www.linkedin.com/in/pranavks/" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>linkedin.com/in/pranavks</span>
+            </a>
+            <a href="Pranav_Resume.docx" class="contact-link" download>
+              <i class="fa-regular fa-file"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/pranavks/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <p class="footer-copy">Pranav K S &copy; 2026</p>
       </div>
     </footer>
+
   </body>
 </html>
